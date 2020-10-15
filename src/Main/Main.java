@@ -47,7 +47,8 @@ public class Main extends Application {
             @Override
             public void handle(MouseEvent e)
                 {
-
+                    result = Integer.parseInt(celsius.getText()) * 9/5 +32;
+                    fahrenheit.setText(String.valueOf(result));
                 }
             };
 
@@ -61,6 +62,7 @@ public class Main extends Application {
         };
 
         f_to_c.addEventHandler(MouseEvent.MOUSE_CLICKED, btn_f_to_c);
+        c_to_f.addEventHandler(MouseEvent.MOUSE_CLICKED, btn_c_to_f);
 
         root.getChildren().add(celsiusText);
         root.getChildren().add(celsius);
