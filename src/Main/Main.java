@@ -6,8 +6,6 @@ import javafx.scene.control.TextArea;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-import java.util.ArrayList;
-
 /*******************************
  * @author Marcel Prielinger
  * @version 1 / 20.4.2020
