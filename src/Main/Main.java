@@ -17,6 +17,8 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
+    static int result;
+
     public static void main(String[] args)
     {
         Application.launch(args);
@@ -53,10 +55,12 @@ public class Main extends Application {
             @Override
             public void handle(MouseEvent e)
             {
-
+                result = (Integer.parseInt(fahrenheit.getText()) - 32) * 5/9;
+                celsius.setText(String.valueOf(result));
             }
         };
 
+        f_to_c.addEventHandler(MouseEvent.MOUSE_CLICKED, btn_f_to_c);
 
         root.getChildren().add(celsiusText);
         root.getChildren().add(celsius);
