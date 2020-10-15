@@ -1,10 +1,12 @@
 package Main;
 
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -38,6 +40,23 @@ public class Main extends Application {
 
         Button c_to_f = new Button("Celsius zu Fahrenheit");
         Button f_to_c = new Button("Fahrenheit zu Celsius");
+
+        javafx.event.EventHandler<MouseEvent> btn_c_to_f = new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent e)
+                {
+
+                }
+            };
+
+        javafx.event.EventHandler<MouseEvent> btn_f_to_c = new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent e)
+            {
+
+            }
+        };
+
 
         root.getChildren().add(celsiusText);
         root.getChildren().add(celsius);
